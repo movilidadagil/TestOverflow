@@ -1,0 +1,39 @@
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+
+            <!--Card-->
+            <mdb-card cascade="true" class="cascading-admin-card">
+
+                <!--Card Data-->
+                <div class="admin-up">
+                    <mdb-icon fas icon="chart-bar" class="red accent-2"></mdb-icon>
+                    <div class="data">
+                        <h4><strong>{{title}}</strong></h4>
+                    </div>
+                </div>
+                <!--/.Card Data-->
+
+                <!--Card content-->
+                <mdb-card-body>
+
+                    <!--Text-->
+                    <p class="card-text" *ngFor="let issue of issues; let i = index" >
+                        {{issues[i].name}}
+                    </p>
+                </mdb-card-body>
+                <!--/.Card content-->
+
+            </mdb-card>
+            <!--/.Card-->
+
+
+
+
+
+
+    </div>
+    <!--Grid row-->
+

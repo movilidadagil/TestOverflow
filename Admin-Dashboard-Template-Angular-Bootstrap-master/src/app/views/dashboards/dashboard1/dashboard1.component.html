@@ -1,0 +1,195 @@
+<!-- Heading -->
+<mdb-card class="mb-4 wow fadeIn">
+
+    <!--Card content-->
+    <mdb-card-body class="d-sm-flex justify-content-between">
+
+        <h4 class="mb-sm-0 pt-3">
+            <a href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Home Page</a>
+            <span>/</span>
+            <span>Dashboard</span>
+        </h4>
+
+        <form class="d-flex md-form justify-content-center my-0">
+            <!-- Default input -->
+            <input type="search" placeholder="Type your query" aria-label="Search" class="form-control" mdbInput>
+            <button mdbBtn color="primary" size="sm" class="my-0 p" type="submit">
+                <mdb-icon fas icon="search"></mdb-icon>
+            </button>
+
+        </form>
+
+    </mdb-card-body>
+
+</mdb-card>
+<!-- Heading -->
+
+
+<app-stats-card></app-stats-card>
+
+
+<!--Grid row-->
+<div class="row wow fadeIn mt-5">
+
+    <!--Grid column-->
+    <div class="col-md-9 mb-4">
+
+        <!--Card-->
+        <!--/.Card-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-3 mb-4">
+
+        <!--Card-->
+        <!--/.Card-->
+
+        <!--Card-->
+        <mdb-card class="mb-4">
+
+            <!--Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+
+    </div>
+    <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="row wow fadeIn">
+
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+
+        <!--Card-->
+        <!--/.Card-->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <!--Grid column-->
+
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<div class="row wow fadeIn">
+
+    <div class="col-lg-4 col-md-6 mb-4">
+
+        <!--Card-->
+        <mdb-card>
+
+            <!-- Card header -->
+            <div class="card-header" routerLinkActive="active"routerLink="allseleniumtags">
+                <span mdbBtn outline="false" color="primary" rounded="true" size="sm" mdbWavesEffect>
+                    Selenium
+                </span></div>
+
+            <!--Card content-->
+            <table class="table" >
+
+
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                <tr>
+                <td  *ngFor="let tag of seleniumtags">
+
+                   {{tag.name}} <app-tag-card></app-tag-card>
+
+                </td>
+                </tr>
+                </tbody>
+                <!--Table body-->
+            </table>
+        </mdb-card>
+        <!--/.Card-->
+
+    </div>
+
+
+
+
+    <div class="col-lg-4 col-md-6 mb-4">
+
+        <!--Card-->
+        <mdb-card>
+
+            <!-- Card header -->
+            <div class="card-header" routerLinkActive="active"routerLink="allseleniumtags">
+                <span mdbBtn outline="false" color="primary" rounded="true" size="sm" mdbWavesEffect>
+                    Appium
+                </span></div>
+
+            <!--Card content-->
+            <table class="table" >
+
+
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                <tr>
+                    <td  *ngFor="let tag of seleniumtags">
+
+                        {{tag.name}} <app-tag-card></app-tag-card>
+
+                    </td>
+                </tr>
+                </tbody>
+                <!--Table body-->
+            </table>
+        </mdb-card>
+        <!--/.Card-->
+
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+
+        <!--Card-->
+        <mdb-card>
+
+            <!-- Card header -->
+            <div class="card-header" routerLinkActive="active"routerLink="allseleniumtags">
+                <span mdbBtn outline="false" color="primary" rounded="true" size="sm" mdbWavesEffect>
+                    ISTQB
+                </span></div>
+
+            <!--Card content-->
+            <table class="table" >
+
+
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                <tr>
+                    <td  *ngFor="let tag of seleniumtags">
+
+                        {{tag.name}} <app-tag-card></app-tag-card>
+
+                    </td>
+                </tr>
+                </tbody>
+                <!--Table body-->
+            </table>
+        </mdb-card>
+        <!--/.Card-->
+
+    </div>
+
+</div>
+<!--Grid row-->
+
+<!--Grid row-->
+<!--Grid row-->
+
+
+<app-stats-card2></app-stats-card2>
